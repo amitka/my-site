@@ -1,0 +1,78 @@
+@import "../../style/shared";
+
+section {
+  flex: 1 1 86vh;
+
+  .page-content {
+    @include center-column;
+    //
+    display: flex;
+    flex-flow: column nowrap;
+
+    .thumbs-grid {
+      flex: 1 1 90%;
+
+      .thumbs-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5em;
+
+        .grid-item {
+          width: 100%;
+          height: 240px;
+          background-color: var(--secondaryColor);
+
+          a {
+            text-decoration: none;
+            outline: none;
+          }
+
+          &:hover:not(.empthy) {
+            cursor: pointer;
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.25);
+
+            .item-back {
+              opacity: 1;
+            }
+          }
+
+          .item-back {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+
+            &.watch-tower {
+              background-image: url("../../assets/thumbs/watch-tower.gif");
+            }
+
+            .item-title {
+              margin: auto;
+              background-color: var(--primaryColor);
+              color: var(--secondaryColor);
+              padding: 0.5em 1em;
+              border-radius: 2rem;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      flex: 0 0 10%;
+      display: flex;
+
+      span {
+        margin: auto;
+        color: var(--thirdColor);
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

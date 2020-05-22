@@ -1,3 +1,5 @@
+// index.scss
+//
 html,
 body,
 #root {
@@ -5,10 +7,24 @@ body,
   height: 100vh;
 }
 
+:root {
+  .light-theme {
+    --primaryColor: #333;
+    --secondaryColor: #f7f7f7;
+    --thirdColor: #c4c4c4;
+    --fontColor: #333;
+    --backgroundColor: white;
+  }
+
+  .dark-theme {
+    --fontColor: white;
+    --backgroundColor: #222222;
+  }
+}
+
 body {
   font-family: "Maven Pro", system-ui, sans-serif;
   font-size: 100%;
-  color: #333;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
 }

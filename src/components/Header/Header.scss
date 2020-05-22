@@ -1,0 +1,61 @@
+@import "../../style/shared";
+
+header {
+  flex: 0 0 14vh;
+  display: flex;
+  //
+  user-select: none;
+
+  .header-content {
+    @include center-column;
+
+    display: flex;
+    align-items: center;
+
+    a {
+      flex: 1 1 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: currentColor;
+    }
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+
+    .toggle-theme {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      color: var(--thirdColor);
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: var(--primaryColor);
+        border-radius: 100%;
+        margin-right: 0.5em;
+      }
+    }
+
+    .header-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-left: 1em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 12px;
+        height: 20px;
+      }
+
+      > * {
+        margin: 0 0.5em 0 0;
+      }
+    }
+  }
+}

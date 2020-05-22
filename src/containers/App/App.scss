@@ -1,63 +1,13 @@
-$centerColumnWidth: 768px;
-@mixin center-column {
-  width: $centerColumnWidth;
-  height: 100%;
-  margin: auto;
-  //background-color: yellow;
-}
+// App.scss
+//
+@import "../../style/shared";
 
 .App {
   width: 100vw;
   height: 100vh;
-  background: white;
+  color: var(--fontColor);
+  background: var(--backgroundColor);
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
-
-  header {
-    flex: 1 1 10vh;
-    display: flex;
-    //
-    user-select: none;
-
-    .header-content {
-      @include center-column;
-
-      display: flex;
-      align-items: center;
-
-      img {
-        width: 56px;
-        height: 56px;
-      }
-
-      .header-title {
-        flex: 1 1 100%;
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin-left: 1em;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-
-        img {
-          width: 12px;
-          height: 20px;
-          display: inline;
-        }
-
-        > * {
-          margin: 0 0.5em 0 0;
-        }
-      }
-    }
-  }
-
-  section {
-    flex: 1 1 90vh;
-
-    .page-content {
-      @include center-column;
-    }
-  }
 }

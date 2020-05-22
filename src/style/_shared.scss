@@ -1,0 +1,8 @@
+$centerColumnWidth: 768px;
+@mixin center-column {
+  width: 100%;
+  max-width: $centerColumnWidth;
+  height: 100%;
+  margin: auto;
+  //background-color: yellow;
+}
