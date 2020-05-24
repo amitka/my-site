@@ -6,3 +6,59 @@ $centerColumnWidth: 768px;
   margin: auto;
   //background-color: yellow;
 }
+
+h1,
+figure {
+  margin: 1rem 0;
+}
+
+ul,
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.25rem;
+  font-weight: 600;
+}
+
+// Inner Titels
+h3 {
+  font-weight: 400;
+  color: var(--thirdColor);
+  margin: 2rem 0 1rem 0;
+}
+
+article {
+  font-size: 1.25rem;
+}
+
+blockquote {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+
+  & > p {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  &::before {
+    position: absolute;
+    width: 2px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--thirdColor);
+    content: "";
+  }
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--thirdColor);
+}

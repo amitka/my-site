@@ -1,13 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { AppContext } from "../../hooks/useAppContext";
+import classNames from "classnames";
 import Header from "../../components/Header";
 import Routes from "../../Routes";
 
 const App = () => {
-  const [state] = useContext(AppContext);
+  const [{ theme }] = useContext(AppContext);
+  const [currentTheme, setTheme] = useState(theme);
+
+  useEffect(() => {
+    if (theme) {
+      setTheme("light-theme");
+    } else setTheme("dark-theme");
+  }, [theme]);
 
   return (
-    <main className="App light-theme">
+    <main className={`App ${currentTheme}`}>
       <Header />
       <Routes />
     </main>

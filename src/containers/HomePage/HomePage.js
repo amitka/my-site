@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const HomePage = () => {
   return (
-    <section>
-      <div className="page-content">
+    <section className="page-content">
+      <div className="center-column">
         <div className="thumbs-grid">
           <ul className="thumbs-list">
             <li className="grid-item">
@@ -14,9 +14,6 @@ export const HomePage = () => {
                 </div>
               </Link>
             </li>
-            <li className="grid-item empthy" />
-            <li className="grid-item empthy" />
-            <li className="grid-item empthy" />
             <li className="grid-item empthy" />
             <li className="grid-item empthy" />
             <li className="grid-item empthy" />

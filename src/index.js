@@ -5,6 +5,7 @@ import { AppContextProvider } from "./hooks/useAppContext";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import "./style/reset.scss";
+import "./style/_shared.scss";
 import "./index.scss";
 
 ReactDOM.render(

@@ -1,9 +1,10 @@
 @import "../../style/shared";
 
-section {
+.page-content {
   flex: 1 1 86vh;
+  overflow: auto;
 
-  .page-content {
+  .center-column {
     @include center-column;
     //
     display: flex;
