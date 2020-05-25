@@ -30,7 +30,13 @@ export const Header = () => {
           className="toggle-theme"
           onClick={() => setState({ ...state, theme: !state.theme })}
         >
-          <div className="dot"></div>
+          <div className="dot">
+            <div className="dot-color">
+              <div className="dot-icon">
+                {state.theme ? Icons.Moon : Icons.Sun}
+              </div>
+            </div>
+          </div>
           <span>{state.theme ? "Dark" : "Light"}</span>
         </div>
       </nav>

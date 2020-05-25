@@ -1,7 +1,7 @@
 .footer-links {
   margin-top: 2rem;
   padding: 4rem 0;
-  border-top: 1px dashed var(--primaryColor);
+  border-top: 1px dashed var(--thirdColor);
 
   .links-list {
     width: 100%;
@@ -20,13 +20,18 @@
           background-color: var(--secondaryColor);
         }
 
+        &:visited {
+          color: var(--thirdColor);
+        }
+
         .link-icon > svg {
           fill: var(--primaryColor);
         }
-      }
 
-      span {
-        display: block;
+        span {
+          display: block;
+          color: var(--thirdColor);
+        }
       }
     }
   }

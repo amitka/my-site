@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import * as Icons from "../../Icons";
 
 export const HomePage = () => {
   return (
@@ -22,7 +23,14 @@ export const HomePage = () => {
           </ul>
         </div>
         <footer>
-          <span>Amit Kaplinsky © 2020 All rights reserved</span>
+          <div className="social-links">
+            <a href="https://github.com/amitka">{Icons.GitHub}</a>
+            <a href="https://www.linkedin.com/in/amitkaplinsky/">
+              {Icons.LInkedIn}
+            </a>
+            <a href="https://dribbble.com/Amitka">{Icons.Dribbble}</a>
+          </div>
+          <span>Amit Kaplinsky © 2020 All Rights Reserved</span>
         </footer>
       </div>
     </section>

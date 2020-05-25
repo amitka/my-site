@@ -4,7 +4,6 @@ $centerColumnWidth: 768px;
   max-width: $centerColumnWidth;
   height: 100%;
   margin: auto;
-  //background-color: yellow;
 }
 
 h1,
@@ -59,6 +58,7 @@ figure {
 }
 
 figcaption {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-top: 0.35em;
   color: var(--thirdColor);
 }

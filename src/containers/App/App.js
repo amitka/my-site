@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
 import { AppContext } from "../../hooks/useAppContext";
-import classNames from "classnames";
 import Header from "../../components/Header";
 import Routes from "../../Routes";
 

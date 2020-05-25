@@ -28,7 +28,7 @@ export const WatchTower = () => {
           </p>
         </blockquote>
         <p>
-          Without a doubt, Check Point's appliance top feature is its security
+          Without a doubt, Check Point's appliance top features are its security
           capabilities, which are the industry top standarts and what makes it
           appealing.
         </p>
