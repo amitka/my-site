@@ -6,7 +6,6 @@ $centerColumnWidth: 768px;
   margin: auto;
 }
 
-h1,
 figure {
   margin: 1rem 0;
 }
@@ -28,6 +27,12 @@ h3 {
   margin: 2rem 0 1rem 0;
 }
 
+h4 {
+  font-weight: 400;
+  color: var(--thirdColor);
+}
+
+// Overall Font size
 article {
   font-size: 1.25rem;
 }

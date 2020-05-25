@@ -5,7 +5,11 @@ export const WatchTower = () => {
   return (
     <article className="page-content">
       <div className="center-column">
+        <h4>April 2019</h4>
         <h1>Falling down the Rabbit Hole</h1>
+        <p>
+          Or how we built consumer mobile app at a large scale B2B enterprise
+        </p>
         <figure>
           <img
             src={require("../../assets/watch-tower/hole.jpeg")}

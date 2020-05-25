@@ -6,6 +6,7 @@ import { HashRouter as Router } from "react-router-dom";
 
 import "./style/reset.scss";
 import "./style/_shared.scss";
+import "./style/media-queries.scss";
 import "./index.scss";
 
 ReactDOM.render(
